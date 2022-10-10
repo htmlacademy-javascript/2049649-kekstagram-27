@@ -25,22 +25,12 @@ function getRandomInt(min, max) {
 
 getRandomInt(1, 10);
 
-function getStringComment(currentComment, maxComment) {
-  maxComment = Number(maxComment);
-
-  if (isNaN(maxComment)) {
-    return false;
-  }
-
-  if (maxComment > 140) {
-    maxComment = 140;
-  }
-
-  if (currentComment.length > maxComment) {
+function getString (string, maxLength) {
+  if (string.length > maxLength) {
     return false;
   } else {
     return true;
   }
 }
 
-getStringComment('Meow', 150);
+getString('Meow', 150);
