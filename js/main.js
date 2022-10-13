@@ -25,12 +25,8 @@ function getRandomInt(min, max) {
 
 getRandomInt(1, 10);
 
-function getString (string, maxLength) {
-  if (string.length > maxLength) {
-    return false;
-  } else {
-    return true;
-  }
+function checkStringLength(string, maxLength) {
+  return string.length <= maxLength;
 }
 
-getString('Meow', 150);
+checkStringLength('Meow', 150);
