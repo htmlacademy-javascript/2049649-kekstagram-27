@@ -86,8 +86,4 @@ const generatePhotoDesc = () => {
 
 const createPhotoDescription = () => Array.from({length:RANDOM_OBJECTS}, generatePhotoDesc);
 
-// const runArray = () => photoDescription;
-
-// photoDescription();
-
 export {createPhotoDescription};
